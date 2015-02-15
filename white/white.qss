@@ -16,7 +16,7 @@ QMainWindow > .QWidget
 }
 
 QTabWidget#fileBaseEditor::pane
-{/*background: url(resources/style/images/welcome.png) center center no-repeat;*/
+    {/*background: url(resources/skins/images/welcome.png) center center no-repeat;*/
 }
 
 QDialogButtonBox
@@ -90,8 +90,6 @@ QStatusBar
 /*font-size: 19px*/
 QToolTip
 {
-    border-width: 3;
-    font-size: 13px;
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #eceef0, stop:1 #d7dbdf);
     border: 1px solid #c9ced3;
     padding: 5px;
@@ -380,19 +378,19 @@ QToolBox::tab:selected,QToolBox::tab:hover
 
 *::down-arrow:disabled, *::down-arrow:off
 {
-    image: url(resources/style/images/default/down_arrow_disabled.png);
+    image: url(resources/skins/images/default/down_arrow_disabled.png);
 }
 
 *::up-arrow
 {
-    image: url(resources/style/images/default/up_arrow.png);
+    image: url(resources/skins/images/default/up_arrow.png);
     width: 7px;
     height: 7px;
 }
 
 *::up-arrow:disabled, *::up-arrow:off
 {
-    image: url(resources/style/images/default/up_arrow_disabled.png);
+    image: url(resources/skins/images/default/up_arrow_disabled.png);
 }
 
 QLineEdit
@@ -1135,13 +1133,13 @@ QSplitter::handle:vertical
 
 QSplitter::handle
 {
-    /*image: url(resources/style/images/view-fullscreen.png);*/
+    /*image: url(resources/skins/images/view-fullscreen.png);*/
     background: #E6E5E3;
 }
 
 QSplitter::handle:pressed
 {
-    /*image: url(resources/style/images/view-fullscreen.png);*/
+    /*image: url(resources/skins/images/view-fullscreen.png);*/
 }
 
 QGroupBox
@@ -1165,57 +1163,57 @@ QGroupBox::indicator
 
 QGroupBox::indicator:unchecked
 {
-    image: url(resources/style/images/vista/checkbox_off_enabled.png);
+    image: url(resources/skins/images/vista/checkbox_off_enabled.png);
 }
 
 QGroupBox::indicator:unchecked:!enabled
 {
-    image: url(resources/style/images/vista/checkbox_off_disabled.png);
+    image: url(resources/skins/images/vista/checkbox_off_disabled.png);
 }
 
 QGroupBox::indicator:unchecked:hover
 {
-    image: url(resources/style/images/vista/checkbox_off_enabled_hover.png);
+    image: url(resources/skins/images/vista/checkbox_off_enabled_hover.png);
 }
 
 QGroupBox::indicator:unchecked:pressed
 {
-    image: url(resources/style/images/vista/checkbox_off_enabled_pressed.png);
+    image: url(resources/skins/images/vista/checkbox_off_enabled_pressed.png);
 }
 
 QGroupBox::indicator:checked
 {
-    image: url(resources/style/images/vista/checkbox_on_enabled.png);
+    image: url(resources/skins/images/vista/checkbox_on_enabled.png);
 }
 
 QGroupBox::indicator:checked:!enabled
 {
-    image: url(resources/style/images/vista/checkbox_on_disabled.png);
+    image: url(resources/skins/images/vista/checkbox_on_disabled.png);
 }
 
 QGroupBox::indicator:checked:hover
 {
-    image: url(resources/style/images/vista/checkbox_on_enabled_hover.png);
+    image: url(resources/skins/images/vista/checkbox_on_enabled_hover.png);
 }
 
 QGroupBox::indicator:checked:pressed
 {
-    image: url(resources/style/images/vista/checkbox_on_enabled_pressed.png);
+    image: url(resources/skins/images/vista/checkbox_on_enabled_pressed.png);
 }
 
 QGroupBox::indicator:indeterminate:hover
 {
-    image: url(resources/style/images/vista/checkbox_inter_enabled_hover.png);
+    image: url(resources/skins/images/vista/checkbox_inter_enabled_hover.png);
 }
 
 QGroupBox::indicator:indeterminate
 {
-    image: url(resources/style/images/vista/checkbox_inter_enabled.png);
+    image: url(resources/skins/images/vista/checkbox_inter_enabled.png);
 }
 
 QGroupBox::indicator:indeterminate:!enabled
 {
-    image: url(resources/style/images/vista/checkbox_inter_disabled.png);
+    image: url(resources/skins/images/vista/checkbox_inter_disabled.png);
 }
 
 /* Customize check boxes. */
@@ -1232,57 +1230,57 @@ QCheckBox::indicator
 
 QCheckBox::indicator:unchecked
 {
-    image: url(resources/style/images/vista/checkbox_off_enabled.png);
+    image: url(resources/skins/images/vista/checkbox_off_enabled.png);
 }
 
 QCheckBox::indicator:unchecked:!enabled
 {
-    image: url(resources/style/images/vista/checkbox_off_disabled.png);
+    image: url(resources/skins/images/vista/checkbox_off_disabled.png);
 }
 
 QCheckBox::indicator:unchecked:hover
 {
-    image: url(resources/style/images/vista/checkbox_off_enabled_hover.png);
+    image: url(resources/skins/images/vista/checkbox_off_enabled_hover.png);
 }
 
 QCheckBox::indicator:unchecked:pressed
 {
-    image: url(resources/style/images/vista/checkbox_off_enabled_pressed.png);
+    image: url(resources/skins/images/vista/checkbox_off_enabled_pressed.png);
 }
 
 QCheckBox::indicator:checked
 {
-    image: url(resources/style/images/vista/checkbox_on_enabled.png);
+    image: url(resources/skins/images/vista/checkbox_on_enabled.png);
 }
 
 QCheckBox::indicator:checked:!enabled
 {
-    image: url(resources/style/images/vista/checkbox_on_disabled.png);
+    image: url(resources/skins/images/vista/checkbox_on_disabled.png);
 }
 
 QCheckBox::indicator:checked:hover
 {
-    image: url(resources/style/images/vista/checkbox_on_enabled_hover.png);
+    image: url(resources/skins/images/vista/checkbox_on_enabled_hover.png);
 }
 
 QCheckBox::indicator:checked:pressed
 {
-    image: url(resources/style/images/vista/checkbox_on_enabled_pressed.png);
+    image: url(resources/skins/images/vista/checkbox_on_enabled_pressed.png);
 }
 
 QCheckBox::indicator:indeterminate:hover
 {
-    image: url(resources/style/images/vista/checkbox_inter_enabled_hover.png);
+    image: url(resources/skins/images/vista/checkbox_inter_enabled_hover.png);
 }
 
 QCheckBox::indicator:indeterminate
 {
-    image: url(resources/style/images/vista/checkbox_inter_enabled.png);
+    image: url(resources/skins/images/vista/checkbox_inter_enabled.png);
 }
 
 QCheckBox::indicator:indeterminate:!enabled
 {
-    image: url(resources/style/images/vista/checkbox_inter_disabled.png);
+    image: url(resources/skins/images/vista/checkbox_inter_disabled.png);
 }
 
 QRadioButton
@@ -1298,47 +1296,47 @@ QRadioButton::indicator
 
 QRadioButton::indicator:unchecked
 {
-    image: url(resources/style/images/vista/radiobutton_off_enabled.png);
+    image: url(resources/skins/images/vista/radiobutton_off_enabled.png);
 }
 
 QRadioButton::indicator:checked
 {
-    image: url(resources/style/images/vista/radiobutton_on_enabled.png);
+    image: url(resources/skins/images/vista/radiobutton_on_enabled.png);
 }
 
 QRadioButton::indicator:checked:hover
 {
-    image: url(resources/style/images/vista/radiobutton_on_enabled_hover.png);
+    image: url(resources/skins/images/vista/radiobutton_on_enabled_hover.png);
 }
 
 QRadioButton::indicator:checked:pressed
 {
-    image: url(resources/style/images/vista/radiobutton_on_enabled_pressed.png);
+    image: url(resources/skins/images/vista/radiobutton_on_enabled_pressed.png);
 }
 
 QRadioButton::indicator:unchecked:!enabled
 {
-    image: url(resources/style/images/vista/radiobutton_off_disabled.png);
+    image: url(resources/skins/images/vista/radiobutton_off_disabled.png);
 }
 
 QRadioButton::indicator:checked:!enabled
 {
-    image: url(resources/style/images/vista/radiobutton_on_disabled.png);
+    image: url(resources/skins/images/vista/radiobutton_on_disabled.png);
 }
 
 QRadioButton::indicator:unchecked:hover
 {
-    image: url(resources/style/images/vista/radiobutton_off_enabled_hover.png);
+    image: url(resources/skins/images/vista/radiobutton_off_enabled_hover.png);
 }
 
 QRadioButton::indicator:unchecked:pressed
 {
-    image: url(resources/style/images/vista/radiobutton_off_enabled_pressed.png);
+    image: url(resources/skins/images/vista/radiobutton_off_enabled_pressed.png);
 }
 
 QSizeGrip
 {
-    background-color: transparent;/*image: url("resources/style/themes/bluesky/sizegrip.png");*/
+    background-color: transparent;/*image: url("resources/skins/themes/bluesky/sizegrip.png");*/
     image: transparent;
     width: 16px;
     height: 16px;
@@ -1347,23 +1345,23 @@ QSizeGrip
 /* Customize arrows. */
 
 *::down-arrow, *::menu-indicator {
-    image: url(resources/style/images/default/down_arrow.png);
+    image: url(resources/skins/images/default/down_arrow.png);
     width: 7px;
     height: 7px;
 }
 
 *::down-arrow:disabled, *::down-arrow:off {
-   image: url(resources/style/images/default/down_arrow_disabled.png);
+   image: url(resources/skins/images/default/down_arrow_disabled.png);
 }
 
 *::up-arrow {
-    image: url(resources/style/images/default/up_arrow.png);
+    image: url(resources/skins/images/default/up_arrow.png);
     width: 7px;
     height: 7px;
 }
 
 *::up-arrow:disabled, *::up-arrow:off {
-   image: url(resources/style/images/default/up_arrow_disabled.png);
+   image: url(resources/skins/images/default/up_arrow_disabled.png);
 }
 
 
@@ -1482,16 +1480,16 @@ QSpinBox::up-button {
     subcontrol-position: top right;
 
     width: 16px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
-    border-image: url(resources/style/images/default/spinup.png) 1;
+    border-image: url(resources/skins/images/default/spinup.png) 1;
     border-width: 1px;
 }
 
 QSpinBox::up-button:hover {
-    border-image: url(resources/style/images/default/spinup_hover.png) 1;
+    border-image: url(resources/skins/images/default/spinup_hover.png) 1;
 }
 
 QSpinBox::up-button:pressed {
-    border-image: url(resources/style/images/default/spinup_pressed.png) 1;
+    border-image: url(resources/skins/images/default/spinup_pressed.png) 1;
 }
 
 QSpinBox::down-button {
@@ -1499,7 +1497,7 @@ QSpinBox::down-button {
     subcontrol-position: bottom right;
 
     width: 16px;
-    border-image: url(resources/style/images/default/spindown.png) 1;
+    border-image: url(resources/skins/images/default/spindown.png) 1;
     border-width: 1px;
     
     
@@ -1509,9 +1507,9 @@ QSpinBox::down-button {
 }
 
 QSpinBox::down-button:hover {
-    border-image: url(resources/style/images/default/spindown_hover.png) 1;
+    border-image: url(resources/skins/images/default/spindown_hover.png) 1;
 }
 
 QSpinBox::down-button:pressed {
-    border-image: url(resources/style/images/default/spindown_pressed.png) 1;
+    border-image: url(resources/skins/images/default/spindown_pressed.png) 1;
 }
