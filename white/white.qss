@@ -195,7 +195,7 @@ QTabBar::tab:top:selected
     border-bottom: 0px solid #c3bfbf;
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #fff, stop:1 #eee);
      background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #e3e3eC, stop:1 #cAcFd5);
-    border-right : 0;
+/*    border-right : 0;*/
 }
 QTabBar::tab:top:last
 {
