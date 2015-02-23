@@ -1,17 +1,25 @@
 /* Customize any plain widget that is a child of a QMainWindow.#ccd3b1 faf3e8*/
 QMainWindow > .QWidget
 {
-    background: #eef1f8;
-    background: url(:/themes/white/white/bg.png) top left repeat;
+/*    background: #eef1f8;*/
+/*    background: url(:/themes/white/white/bg.png) top left repeat;*/
     
     padding: 0px;
     border: none;
 /*    font-family: Consolas;*/
 }
 
-.QWidget , QDialog , #locatorCompleterParent, #modernMenu 
+.QWidget , QDialog , #locatorCompleterParent, #modernMenu ,
+QWidget#PreferencesInstance, QWidget#FindDialogInstance,
+QWidget#SaveFilesDialogInstance, QWidget#CreateProjectInstance,
+QWidget#FvUpdateWindow, QWidget#AutoUpdateWindowInstance ,
+QTreeView#projectExplorer::branch:selected,
+QTreeView#preferencesSidebarTree::branch:selected,
+QTreeWidget#treeResult::branch:selected
 {
-    background-image: url(:/themes/white/white/bg.png) top left repeat;/*font: 12px Calibri , Tahoma, "Times New Roman" ;*/
+/*    background-image: url(:/themes/white/white/bg.png) top left repeat;*/
+    background-color: #C9CED9;
+/*font: 12px Calibri , Tahoma, "Times New Roman" ;*/
     color: #333;
 }
 
@@ -44,12 +52,7 @@ QWidget
     selection-background-color: #6a7582;
 }
 
-QWidget#PreferencesInstance, QWidget#FindDialogInstance,
-QWidget#SaveFilesDialogInstance, QWidget#CreateProjectInstance,
-QWidget#FvUpdateWindow,QWidget#AutoUpdateWindowInstance
-{
-    background-image: url(:/themes/white/white/bg.png) top left repeat;
-}
+
 
 QWidget#messageBar,  QPlainTextEdit#messageBox
 {
@@ -437,8 +440,10 @@ QPushButton
 QPushButton[flat=false]
 {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #f7f8f9, stop:0.0680112 #f7f8f9, stop:0.0690112 #f1f3f4, stop:0.514566 #e4e7ea, stop:0.52577 #dde1e5, stop:1 #d0d4da);
-    border-radius: 3px;
+    border-radius: 1px;
     border: 1px solid #939aa2;
+    
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #f1f1f2, stop:1 #f1f1f2);
 }
 QPushButton#btnDownloadLatestVersion
 {
@@ -461,18 +466,20 @@ QPushButton#btnDownloadLatestVersion:hover
 QPushButton[flat=false]:hover
 {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #fdfeff, stop:0.0680112 #fdfeff, stop:0.0690112 #f4f6f7, stop:0.514566 #e7e9ed, stop:0.52577 #dde2eb, stop:1 #dde2eb);
-    border-radius: 3px;
+    border-radius: 1px;
     border: 1px solid #939aa2;
+    
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #fff, stop:1 #fff);
 }
 
 QPushButton[flat=false]:pressed
 {
-    border-radius: 3px;
+    border-radius: 1px;
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #d0d4da, stop:1 #e4e7ea);
     border: 1px solid #7d8389;
 }
 
-QPushButton[flat=false]:checked
+QPushButton:checked
 {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #f1f1f2, stop:1 #f1f1f2);
     border: 1px solid #7d8389;
@@ -482,7 +489,7 @@ QPushButton[flat=false]:checked
 QPushButton[flat=false]:disabled
 {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #e3e6e9, stop:0.0680112 #e3e6e9, stop:0.0690112 #d1d6db, stop:0.514566 #ccd0d6, stop:0.52577 #c6cbd2, stop:1 #c0c6cd);
-    border-radius: 3px;
+    border-radius: 1px;
     border: 1px solid #969ea7;
     color: #979ea8;
 }
@@ -531,13 +538,6 @@ QTreeWidget#workspaceExplorer
     show-decoration-selected: 1;
 }
 
-QTreeView#projectExplorer::branch:selected,
-QTreeView#preferencesSidebarTree::branch:selected,
-QTreeWidget#treeResult::branch:selected
-{
-    border: 0px solid #cccaaa;
-    background: url(:/themes/white/white/bg.png) top left no-repeat;
-}
 
 QTreeView#workspaceExplorer::item,
 QTreeView#workspaceExplorer::item:hover,
@@ -779,7 +779,8 @@ QMenuBar
     padding-right: 2px;
     margin: 0px;
     margin-bottom: 0px;
-    background: url(:/themes/white/white/bg.png) top left repeat;
+/*    background: url(:/themes/white/white/bg.png) top left repeat;*/
+background-color : #C9CED9;
 }
 
 QMenuBar::item
@@ -809,8 +810,8 @@ QMenuBar::item:pressed
 QToolBar#mainToolBar
 {
 /*    background: #eef1f8;*/
-    background-image: url(:/themes/white/white/bg.png) top left repeat;
-/*    background: transparent;*/
+/*    background-image: url(:/themes/white/white/bg.png) top left repeat;*/
+    background: transparent;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border: 0px solid #7d8389;
@@ -875,7 +876,7 @@ QMenu
 {
     color: #414243;
     background-color: #CACEDB;
-    background-image: url(:/themes/white/white/bg.png) top left repeat;
+/*    background-image: url(:/themes/white/white/bg.png) top left repeat;*/
     margin: 0px;
     padding: 2px;/* some spacing around the menu */
     border: none;
