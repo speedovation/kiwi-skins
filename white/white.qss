@@ -805,9 +805,9 @@ QMenuBar
     border-top-left-radius: 0px;
     border: 1px solid #7d8389;
     border-bottom: none;
-    padding-top: 3px;
+    padding-top: 0px;
     padding-bottom: 0px;
-    padding-right: 2px;
+    padding-right: 0px;
     margin: 0px;
     margin-bottom: 0px;
 /*    background: url(:/themes/white/white/bg.png) top left repeat;*/
@@ -817,7 +817,7 @@ background-color : #C9CED9;
 QMenuBar::item
 {
     spacing: 0px;/* spacing between menu bar items */
-    padding: 5px 8px;
+    padding: 2px 8px;
     background: transparent;
     border-radius: 3px;
     font-weight: bold;
@@ -1569,6 +1569,37 @@ QSpinBox::down-button:hover {
 QSpinBox::down-button:pressed {
 /*    border-image: url(resources/skins/images/default/spindown_pressed.png) 1;*/
 }
+
+
+/* Style for main toolbar */
+QToolBar
+{
+    border: 0px solid #8b8b8b;
+	background-color: transparent;
+	spacing: 2px; /* spacing between items in the tool bar */
+/*	margin-left: 0px;*/
+/*	color: #e5e5e5;*/
+	max-height: 20px;
+}
+
+
+/* All types of tool button */
+QToolButton
+{
+	border: 0px solid #353535;
+/*	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a6a6a6, stop:1 #8a8a8a);*/
+/*	color: #e5e5e5;*/
+/*	border-radius: 5px;*/
+	max-height: 16px;
+/*	min-width: 18px;*/
+}
+
+#navToolBar QPushButton
+{
+    border: 1px solid #333;
+    padding: 0px 0px;
+}
+
 
 /*
  QScrollBar:vertical { background: url(:client/img/common/vertical_scrollbar_bg.fw.png) repeat-y; width: 13px;  margin: 0px 0 0px 0;  }
