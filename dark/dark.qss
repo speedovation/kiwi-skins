@@ -85,17 +85,6 @@ QTabWidget#tabToolWindow QTabBar::tab:top:!selected
     border: 1px solid #8b939c;
 }
 
-/* CSS Window Tab ENDS */
-QTabWidget::tab-bar:top
-{
-    left: 0px;
-}
-
-QTabWidget
-{
-    border: none;
-    outline: 0;
-}
 
 QTabWidget::pane
 {
@@ -103,23 +92,9 @@ QTabWidget::pane
     border: 0px solid #E6E5E3;
 }
 
-QTabBar::tab:top
-{
-    min-width: 16ex;
-    padding: 2px 4px;
-    margin-right: 0px;
-    margin-left: 0px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    
-/*    font-weight: bold;*/
-}
 
-/*Change bg color of selector list and css top toolbar */
-#cssToolBar , #cssSelectorsList
-{
-/*    background-color:#fff;*/
-}
+
+
 QTabBar::tab:top:!selected
 {
 /*    border-width: 1;*/
@@ -176,16 +151,7 @@ QTabBar::tab:top:selected:hover
     background: #ececee;
 }
 
-QTabBar::tab:bottom
-{
-    min-width: 22.1ex;
-    padding: 3px;
-    margin-bottom: 2px;
-    margin-right: 0.1px;
-    margin-left: 0.1px;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-}
+
 
 QTabBar::tab:bottom:!selected
 {
@@ -214,26 +180,12 @@ QTabBar::tab:bottom:selected:hover
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #efefef, stop:1 #dee0e2);
 }
 
-QTabBar::tab:first:selected
-{
-    margin-left: 0;/* the first selected tab has nothing to overlap with on the left */
-}
 
-QTabBar::tab:last:selected
-{
-    margin-right: 0;/* the last selected tab has nothing to overlap with on the right */
-}
 
-QTabBar::tab:only-one
-{
-    margin: 0;/* if there is only one tab, we don't want overlapping margins */
-}
 
-QTabBar::close-button
-{
-/*    image: url(:/tango/images/tango/16x16/actions/process-stop.png);*/
-    image: url(:/themes/white/white/close16.png);
-}
+
+
+
 
 QTabBar::close-button:hover
 {
@@ -242,16 +194,9 @@ QTabBar::close-button:hover
     border-radius: 2px;
 }
 
-QTabBar::tear
-{
-    image: url(:/tb/images/tree/1.png);
-}
 
-QTabBar::scroller
-{/* the width of the scroll buttons */
-    width: 20px;
-    height: 5px;
-}
+
+
 
 QTabBar QToolButton
 {/* the scroll buttons are tool buttons */
@@ -260,24 +205,11 @@ QTabBar QToolButton
     border: 1px solid #939aa2;
 }
 
-QTabBar QToolButton::right-arrow
-{/* the arrow mark in the tool buttons */
-    image: url(:/theme/images/theme/default/arrow/arrow-right.png);
-}
 
-QTabBar QToolButton::left-arrow
-{
-    image: url(:/theme/images/theme/default/arrow/arrow-left.png);
-}
 
-/* Style the tab using the tab sub-control. 
-Note that it reads QTabBar _not_ QTabWidget */
-QTabBar::tab:right
-{/* background: qlineargradient(spread:pad, x1:0.37867, y1:0.063, x2:0.378, y2:0.954, stop:0 rgba(244, 249, 255, 255), stop:1 rgba(240, 246, 254, 255));*/
-    min-height: 40ex;
-    padding: 4px;
-    margin-right: 0.5px;
-    margin-left: 0.5px;
+
+
+
 }
 
 QTabBar::tab:right:!selected
@@ -336,31 +268,11 @@ QToolBox::tab:selected,QToolBox::tab:hover
 }
 
 
-/* Customize arrows. */
-*::down-arrow, *::menu-indicator
-{
-    image: url(:/pagefold/resources/pagefold/down_arrow.png);
-    width: 7px;
-/*    padding-left: 20px;*/
-    height: 2em;
-}
 
-*::down-arrow:disabled, *::down-arrow:off
-{
-    image: url(resources/skins/images/default/down_arrow_disabled.png);
-}
 
-*::up-arrow
-{
-    image: url(resources/skins/images/default/up_arrow.png);
-    width: 7px;
-    height: 7px;
-}
 
-*::up-arrow:disabled, *::up-arrow:off
-{
-    image: url(resources/skins/images/default/up_arrow_disabled.png);
-}
+
+
 
 QLineEdit, QTextEdit, #findTextBox, #replaceTextBox
 {
@@ -385,23 +297,10 @@ QLineEdit:disabled , QTextEdit:disabled
 {
     background-color: #ccc;
 }
-QLineEdit#editShortcuts
-{
-    padding: 2px 8px;
-}
 
-/* Customize push buttons and comboboxes. Our read-only combobox
-   is very similar to a push button, so they share the same border image. */
-QPushButton
-{
-    padding: 3px 8px;
-    outline:0;
-}
 
-#FindDialog QPushButton
-{
-    padding: 2px 8px;
-}
+
+
 
 QPushButton[flat=false]
 {
@@ -460,29 +359,11 @@ QPushButton[flat=false]:disabled
     color: #979ea8;
 }
 
-QPushButton#CloseFileInWorkspace
-{
-    background:  url(:/themes/white/white/close.gif) 0 center no-repeat;
-    width: 20px;
-    height: 10px;
-}
 
-/* Customize the size grip. */
-QSizeGrip
-{
-    image: url(:/pagefold/resources/pagefold/sizegrip.png);
-    width: 16px;
-    height: 16px;
-}
 
-QAbstractItemView
-{
-    outline: 0;
-}
 
-QTreeWidget#treeResult
-{
-}
+
+
 
 /* Customize the treeview. */
 QTreeView,QTreeWidget
@@ -499,19 +380,9 @@ QTreeView,QTreeWidget
     padding:0;
 }
 
-QTreeWidget#workspaceExplorer
-{
-    show-decoration-selected: 1;
-}
 
 
-QTreeView#workspaceExplorer::item,
-QTreeView#workspaceExplorer::item:hover,
-QTreeView#workspaceExplorer::branch:selected
-{
-    border-left-color: transparent;
-    border-right-color: transparent;
-}
+
 
 QTreeView#workspaceExplorer::branch:hover 
 /*QTreeWidget#preferencesSidebarTree::branch:hover,
@@ -531,12 +402,6 @@ QTreeWidget#treeResult::branch:selected*/
     color: #fff;
 }
 
-QTreeView::item
-{
-    border: 1px solid transparent;
-    border-image: none;
-    padding: 2px 0;
-}
 
 QTreeView#projectExplorer::item
 {
@@ -544,15 +409,7 @@ QTreeView#projectExplorer::item
     padding-right: 4px;
     padding-left: 4px;
 }
-QTreeView#projectExplorer,
-QTreeWidget#preferencesSidebarTree,
-QTreeWidget#treeResult
-{
-    show-decoration-selected: 1;
-}
-QTreeView::branch {     border-image: none;}
 
-QTreeView::item:hover
 {
     background: qlineargradient(spread:pad, x1:0.453399, y1:0, x2:0.462, y2:1, stop:0 #f1f1f2, stop:1 #e7e8e8);
     border: 1px solid #97999d;
@@ -565,13 +422,6 @@ QTreeView::item:selected
     color: #fff;
 }
 
-QTreeView::item:focus
-{
-/*    background: transparent;*/
-    border: 0;
-    border-image: none;
-    
-}
 
 QTreeView::item:selected:active
 {
@@ -588,25 +438,7 @@ QTreeView::item:selected:!active
     color: #fff;
 }
 
-QTreeView::branch:has-siblings::selected
-{
-    border: 1px solid #000;
-}
 
-QTreeView::branch:has-siblings:!adjoins-item
-{
-    border-image: url(:/tb/images/tree/1.png) 0;
-}
-
-QTreeView::branch:has-siblings:adjoins-item
-{
-    border-image: url(:/tb/images/tree/1.png) 0;
-}
-
-QTreeView::branch:!has-children:!has-siblings:adjoins-item
-{
-    border-image: url(:/tb/images/tree/1.png.gif) 0;
-}
 
 QTreeView::branch:has-children:!has-siblings:closed, QTreeView::branch:closed:has-children:has-siblings
 {
