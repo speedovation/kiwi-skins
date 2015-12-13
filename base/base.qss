@@ -21,7 +21,7 @@ QTreeView#preferencesSidebarTree::branch:selected,
 QTreeWidget#treeResult::branch:selected
 {
 /*    background-image: url(:/themes/white/white/bg.png) top left repeat;*/
-    background-color: #C9CED9;
+    background-color: #E6E6E6;
 /*    background-color: #fff;*/
 /*font: 12px Calibri , Tahoma, "Times New Roman" ;*/
     color: #333;
@@ -56,6 +56,11 @@ QWidget
     selection-background-color: #6a7582;
 }
 
+#SessionListContainer
+{
+   background: #ccc;
+   border-radius: 5px;
+}
 
 
 #FlashMessageBar QPlainTextEdit#messageBox
@@ -820,7 +825,9 @@ QMenuBar
     margin: 0px;
     margin-bottom: 0px;
 /*    background: url(:/themes/white/white/bg.png) top left repeat;*/
-background-color : #C9CED9;
+    
+    border: 1px solid #aAaFb5;
+    background-color: #E1E1E1;
 }
 
 QMenuBar::item
@@ -1468,7 +1475,7 @@ QComboBox
 /*    height: 20px;*/
 /*    margin-top: 2px;*/
     
-    background-color: #eaeaee;
+    background-color: #E1E1E1;
 }
 
 QComboBox
@@ -1541,7 +1548,7 @@ QSpinBox
 /*    height: 20px;*/
 /*    margin-top: 2px;*/
     
-    background-color: #eaeaee;
+    background-color: #E1E1E1;
 }
 
 QSpinBox::up-button {
