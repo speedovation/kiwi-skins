@@ -57,11 +57,6 @@ QWidget
     selection-background-color: #6a7582;
 }
 
-#SessionsListContainer, #ProjectsListContainer, #FilesListContainer
-{
-   background: #fefefe;
-   border-radius: 0px;
-}
 
 
 #FlashMessageBar QPlainTextEdit#messageBox
@@ -77,6 +72,11 @@ QWidget
 }*/
 
 
+#BaseEditor
+{
+/*    border:1px solid #FAFAFB;*/
+/*    border-top-color: transparent;*/
+}
 
 QTabWidget
 {
@@ -157,7 +157,15 @@ QTabWidget
 QTabWidget::pane
 {
     border: none;
-    border: 0px solid #E6E5E3;
+    
+    border: 0px solid #E2E2E4;
+    border-top: 1px solid #D6D6D9;
+    top: -1px;
+}
+
+QTabBar
+{
+    
 }
 
 QTabBar::tab:top
@@ -187,7 +195,7 @@ QTabBar::tab:top:!selected
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
     border: 1px solid #E5E5E6;
-    border-bottom-color: transparent;
+    border-bottom-color: #D6D6D9;
     border-top-color: transparent;
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #b3b3bC, stop:1 #9A9FA5);
     
@@ -216,6 +224,7 @@ QTabBar::tab:top:selected
     background: #4797F1;
     color: #fff;*/
     background: #FAFAFB;
+    border-top-width:2px;
 /*    border-right : 0;*/
 }
 QTabBar::tab:top:last
@@ -828,7 +837,6 @@ QHeaderView::up-arrow
 }
 
 
-
 /* Customize the menu bar. */
 QMenuBar
 {
@@ -845,7 +853,7 @@ QMenuBar
     margin-bottom: 0px;
 /*    background: url(:/themes/white/white/bg.png) top left repeat;*/
     
-    border: 1px solid #D3D3D6;
+    border: 0px solid #D3D3D6;
     background-color: #F9F9F9;
 }
 
@@ -1694,6 +1702,26 @@ NavToolBar
 #filesToolbase,#projectsToolbase,#sessionsToolbase
 {
     background: transparent;
+}
+#SessionsListContainer, #ProjectsListContainer, #FilesListContainer
+{
+   background: #fefefe;
+   border-radius: 0px;
+   border: 1px solid #D9DADC;
+}
+
+#SessionsListContainer
+{
+    border-right:0;
+}
+#ProjectsListContainer
+{
+    border-left:0;
+    border-right:0;
+}
+#FilesListContainer
+{
+    border-left:0
 }
 /*
  QScrollBar:vertical { background: url(:client/img/common/vertical_scrollbar_bg.fw.png) repeat-y; width: 13px;  margin: 0px 0 0px 0;  }
