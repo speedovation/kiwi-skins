@@ -531,12 +531,14 @@ QToolBar{
     color: #aAaFb5;*/}
 #modernMenu QToolButton{
 /*    max-height: 22px; */
-/*    min-height: 22px; */    color: #3A3F55;
+/*    min-height: 22px; */    
+/*color: #3A3F55;*/
     padding: 0;
 }
 #modernMenu QToolButton:hover{
 /*    max-height: 22px; */
-/*    min-height: 22px; */    color: #3A3F55;
+/*    min-height: 22px; */    
+/*color: #3A3F55;*/
     padding: 0;
     background: #fff;
     border: none;
