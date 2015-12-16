@@ -481,17 +481,16 @@ QPushButton
 QPushButton[flat=false]
 {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #f7f8f9, stop:0.0680112 #f7f8f9, stop:0.0690112 #f1f3f4, stop:0.514566 #e4e7ea, stop:0.52577 #dde1e5, stop:1 #d0d4da);
+    border-radius: 1px;
     border: 1px solid #4F4DAF;
+    
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #f1f1f2, stop:1 #f1f1f2);
+    
     background: #5B59BA;
 
-    border-radius: 1px;
     border: 1px solid #888;
     background: #fff;
     color: #333;
-     border: 1px solid #D3D4D7;
-    
-    background: #FAFAFB;
 }
 QPushButton#btnDownloadLatestVersion
 {
@@ -515,17 +514,20 @@ QPushButton[flat=false]:hover
 {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #fdfeff, stop:0.0680112 #fdfeff, stop:0.0690112 #f4f6f7, stop:0.514566 #e7e9ed, stop:0.52577 #dde2eb, stop:1 #dde2eb);
     border-radius: 1px;
-    border: 1px solid #aaa;
+    border: 1px solid #156CCE;
     
-    background: #fff;
-    
+    background:#4797F1;
+    color:#fff
 }
 
 QPushButton[flat=false]:pressed
 {
     border-radius: 1px;
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #d0d4da, stop:1 #e4e7ea);
-    border: 1px solid #7d8389;
+    border: 1px solid #156CCE;
+    
+    background:#3979C2;
+    color:#fff
 }
 
 QPushButton:checked
