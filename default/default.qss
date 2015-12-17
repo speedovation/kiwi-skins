@@ -1,3 +1,19 @@
+/****************************************************************************
+**
+** Copyright (C) 2007-2015 Speedovation
+** Contact: Speedovation Lab (info@speedovation.com)
+**
+** KineticWing Skins
+** http:// kineticwing.com
+** This file is part of the KiWi Editor (IDE)
+**
+** Author: Yash Bhardwaj
+** License : Apache License 2.0
+**
+** All rights are reserved.
+*/
+
+
 /* Customize any plain widget that is a child of a QMainWindow.#ccd3b1 faf3e8*/
 QMainWindow > .QWidget {
     background: #d5d9de;
