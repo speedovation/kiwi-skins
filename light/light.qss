@@ -24,6 +24,7 @@ QMainWindow > .QWidget
 /*    font-family: Consolas;*/
 }
 
+
 .QWidget , QDialog , #locatorCompleterParent, #modernMenu ,
 QWidget#PreferencesInstance, QWidget#FindDialogInstance,
 QWidget#SaveFilesDialogInstance, QWidget#CreateProjectInstance,
@@ -625,7 +626,7 @@ QMenu
 /*    background-image: url(:/themes/white/white/bg.png) top left repeat;*/
     margin: 0px;
     padding: 2px;/* some spacing around the menu */
-    border: none;
+    border: 1px solid #7d8389;
 }
 
 
