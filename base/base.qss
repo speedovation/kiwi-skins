@@ -919,12 +919,16 @@ QTabBar QToolButton , QTabBar QAction
     padding: 3px;
 }
 
-QToolBar QToolButton:hover:enabled
-{/* when selected using mouse or keyboard */
+QToolBar QToolButton,  QToolBar QAction
+{
+    padding: 3px;
+}
+QToolBar QToolButton:hover
+{
     background: qlineargradient(spread:reflect, x1:0.45241, y1:1, x2:0.441, y2:0.505, stop:0.255526 #e6e9eb, stop:0.960212 #d6d9de);
     border: 1px solid #a0a5ab;
     border-radius: 0px;
-    padding: 0px;
+    padding: 5px;
     
     background: qlineargradient(spread:pad, x1:0.453399, y1:0, x2:0.462, y2:1, stop:0 #f1f1f2, stop:1 #e7e8e8);
     border: 1px solid #97999d;
@@ -1659,34 +1663,14 @@ QToolButton
 #modernMenu
 {
         border: 1px solid #aAaFb5;
-    padding: 2px 0;
-/*    height: 20px;*/
+    padding: 4px 2px;
+/*    height: 40px;*/
 /*    margin-top: 2px;*/
     
 /*    background-color: #eaeaee;
     color: #aAaFb5;*/
 }
 
-#modernMenu QToolButton
-{
-/*    max-height: 22px; */
-/*    min-height: 22px; */
-    color: #3A3F55;
-    padding:0;
-       
-}
-
-#modernMenu QToolButton:hover
-{
-/*    max-height: 22px; */
-/*    min-height: 22px; */
-    color: #3A3F55;
-    padding:0;
-    background:#fff;
-    border:none;
-    margin:0;
-       
-}
 #modernMenu QToolBar
 {
 /*    max-height: 20px;    */
@@ -1695,8 +1679,48 @@ QToolButton
 /*    padding-bottom: 8px;*/
     margin: 5px 0;
     spacing: 0px; 
-/*    height: 15px;*/
+    height: 48px;
+    max-height: 48px; 
+    min-height: 48px; 
 /*    width: 15px;*/
+}
+
+#modernMenu QToolBar QToolButton
+{
+    max-height: 48px; 
+    min-height: 48px; 
+    color: #3A3F55;
+    padding:5px;
+    height:48px;
+    
+       
+}
+/*QToolButton:hover:!pressed{border-width: 1px; border-image: url(:/images/RibbonToolButtonHoverBk.png) 4 4 4 4 stretch stretch;}*/
+/*QToolButton:hover:pressed{border-width: 1px; border-image: url(:/images/RibbonToolButtonPressedBk.png) 4 4 4 4 stretch stretch;}*/
+#modernMenu QToolBar QToolButton:on:hover
+{
+
+    color: #3A3F55;   
+    background:red;
+    border:2px solid red;
+    margin:0;
+       
+}
+
+#modernMenu QToolBar QToolButton:on:active
+{
+    background: qlineargradient(spread:reflect, x1:0.45241, y1:1, x2:0.441, y2:0.505, stop:0.255526 #fff, stop:0.960212 #eee);
+    border: 1px solid #999;
+    background:green;
+}
+
+#modernMenu QToolBar QToolButton:on
+{
+    background: qlineargradient(spread:pad, x1:0, y1:0.028, x2:0, y2:0.693, stop:0 #a6aab2, stop:0.249451 #b7bbbf, stop:1 #b7bbbf);
+    border: 1px solid #97999d;
+    border-radius: 0px;
+    padding: 0px;
+    background: yellow;
 }
 
 #modernMenu #horizontalLineWidget
