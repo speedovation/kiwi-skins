@@ -56,8 +56,8 @@ QTabWidget#tabToolWindow QTabBar::tab:top:!selected{
 
 
 QTabWidget::pane{
-    border: none;
     border: 1px solid #000;
+    top: -1px;
 }
 QTabBar::tab:top:!selected{
 /*    border-width: 1;*/
@@ -80,6 +80,7 @@ QTabBar::tab:top:selected{
     border-bottom: 0px solid #c3bfbf;
     background: #1F252A;
     color: #fff;
+    border-top-width:0px;
 /*    border-right : 0;*/
 }
 QTabBar::tab:top:last{
@@ -131,22 +132,20 @@ QTabBar::close-button:hover
     border-radius: 1px;
 }
 
-QTabBar::close-button:hover{
-/*    image: url(:/tango/images/tango/16x16/actions/process-stop-over.png);*/    background-color: #C9CED9;
-    border-radius: 2px;
-}
+
 QTabBar QToolButton{
 /* the scroll buttons are tool buttons */    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #fdfeff, stop:0.0680112 #fdfeff, stop:0.0690112 #f4f6f7, stop:0.514566 #e7e9ed, stop:0.52577 #dde2eb, stop:1 #dde2eb);
     border-radius: 0px;
     border: 0px solid #939aa2;
 }
 QTabBar::tab:right:!selected{
-    border-width: 3;
+    border-width: 0;
     background: qlineargradient(spread:pad, x1:0.453399, y1:0, x2:0.462, y2:1, stop:0.0936281 rgba(245, 245, 245, 255), stop:1 rgba(224, 224, 224, 255));
-    border: 1px solid #c3bfbf;
-    border-right-color: transparent;
-/* same as pane color */    margin-top: 1px;
-/* make non-selected tabs look smaller */}
+    border: 0px solid red;
+    border-right-color: transparent; /* same as pane color */
+    margin-top: 1px; /* make non-selected tabs look smaller */
+
+}
 /* make use of negative margins for overlapping tabs */
 QTabBar::tab:right:selected{
     border-width: 3;
@@ -589,11 +588,8 @@ QCheckBox{
 
 #SessionsListContainer, #ProjectsListContainer, #FilesListContainer
 {
-   background: #fefefe;
    border-radius: 0px;
-   border: 1px solid #D9DADC;
-
-   border: 1px solid #0F1417;
+   border-color:  #0F1417;
     background: #374148;
     color: #7E8F9D;
 }
