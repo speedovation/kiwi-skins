@@ -167,6 +167,7 @@ QTabWidget#tabToolWindow QTabBar::tab:top:!selected
 }
 
 /* CSS Window Tab ENDS */
+
 QTabWidget::tab-bar:top
 {
     left: 0px;

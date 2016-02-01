@@ -1,6 +1,6 @@
 /****************************************************************************
 **
-** Copyright (C) 2007-2015 Speedovation
+** Copyright (C) 2007-2016 Speedovation
 ** Contact: Speedovation Lab (info@speedovation.com)
 **
 ** KineticWing Skins
@@ -37,12 +37,14 @@ QWidget#messageBar, QPlainTextEdit#messageBox{
 }
 QToolTip , #TooltipInfo QLabel,#TooltipInfo
 {
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #eceef0, stop:1 #d7dbdf);
-    border: 1px solid #c9ced3;
     padding: 5px;
-    border-radius: 2px;
-    color: #000;
+    border: 1px solid #8b939c;
+    background: #374148;
+    color: #7E8F9D;
+    border-radius:0;
+
 }
+
 QTabWidget#tabToolWindow QTabBar::tab:top:selected{
     border: 0px solid #8b939c;
     border-bottom: 0px solid #ccc;
@@ -51,52 +53,53 @@ QTabWidget#tabToolWindow QTabBar::tab:top:selected{
 QTabWidget#tabToolWindow QTabBar::tab:top:!selected{
     border: 0px solid #8b939c;
 }
+
+
 QTabWidget::pane{
     border: none;
-    border: 0px solid #000;
+    border: 1px solid #000;
 }
 QTabBar::tab:top:!selected{
-/*    border-width: 1;*/    color: #98AFC2;
+/*    border-width: 1;*/
+    color: #98AFC2;
     margin-top: 0px;
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #f7f8f9, stop:0.0680112 #f7f8f9, stop:0.0690112 #f1f3f4, stop:0.514566 #e4e7ea, stop:0.52577 #dde1e5, stop:1 #d0d4da);
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
-    border: 1px solid #374148;
+    border: 0px solid #374148;
     border-bottom-color: transparent;
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #b3b3bC, stop:1 #9A9FA5);
-    background: #9A9EA8;
     background: #374148;
-/*    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B4B7B9, stop:1  #9FABB6);*/
-/*    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #f7f8f9, stop:0.0680112 #f7f8f9, stop:0.0690112 #f1f3f4, stop:0.514566 #e4e7ea, stop:0.52577 #dde1e5, stop:1 #d0d4da);*/    border-right: 0;
+    background: #374148;
+    border-right: 0;
 }
 /* make use of negative margins for overlapping tabs */
 QTabBar::tab:top:selected{
-    border-width: 1;
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #fff, stop:1 #fff);
-    border: 1px solid #c3bfbf;
+    border-width: 0;
+     border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
     border: 0px solid #7d8389;
     border-bottom: 0px solid #c3bfbf;
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #fff, stop:1 #eee);
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #e3e3eC, stop:1 #cAcFd5);
-    background: #eaeaee;
-    background: #98AFC2;
-/*    border-right : 0;*/}
+    background: #1F252A;
+    color: #fff;
+/*    border-right : 0;*/
+}
 QTabBar::tab:top:last{
     border-right: 1px solid #7d8389;
 }
+
 QTabBar::tab:top:hover{
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E6E5E3, stop:1 #E6E5E3);
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E6E5E3, stop:1 #E6E5E3);
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #c3c3cC, stop:1 #aAaFb5);
-    background: #c3c3cC;
+    background: #222B31;
 }
+
 QTabBar::tab:top:selected:hover{
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #fff, stop:1 #eee);
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #eaeaee, stop:1 #E6E5E3);
-    background: #ececee;
+    background: #1F252A;
+    color: #fff;
 }
+
 QTabBar::tab:bottom:!selected{
-    border-width: 2;
+    border-width: 1;
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #edeff1, stop:1 #e3e6e9);
     border: 0px solid #8b939c;
 /* same as pane color */    margin-bottom: 1px;
@@ -113,6 +116,21 @@ QTabBar::tab:bottom:hover{
 QTabBar::tab:bottom:selected:hover{
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #efefef, stop:1 #dee0e2);
 }
+
+
+QTabBar::close-button
+{
+/*    image: url(:/tango/images/tango/16x16/actions/process-stop.png);*/
+    image: url(:/themes/black/black/close16.png);
+}
+
+QTabBar::close-button:hover
+{
+/*    image: url(:/tango/images/tango/16x16/actions/process-stop-over.png);*/
+    background-color:#374148;
+    border-radius: 1px;
+}
+
 QTabBar::close-button:hover{
 /*    image: url(:/tango/images/tango/16x16/actions/process-stop-over.png);*/    background-color: #C9CED9;
     border-radius: 2px;
