@@ -35,7 +35,8 @@ QWidget#messageBar, QPlainTextEdit#messageBox{
     color: #7E8F9D;
     margin-top: 0px;
 }
-QToolTip{
+QToolTip , #TooltipInfo QLabel,#TooltipInfo
+{
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #eceef0, stop:1 #d7dbdf);
     border: 1px solid #c9ced3;
     padding: 5px;
@@ -547,13 +548,13 @@ QToolBar{
     color: #aAaFb5;*/}
 #modernMenu QToolButton{
 /*    max-height: 22px; */
-/*    min-height: 22px; */    
+/*    min-height: 22px; */
 /*color: #3A3F55;*/
     padding: 0;
 }
 #modernMenu QToolButton:hover{
 /*    max-height: 22px; */
-/*    min-height: 22px; */    
+/*    min-height: 22px; */
 /*color: #3A3F55;*/
     padding: 0;
     background: #fff;
@@ -573,7 +574,7 @@ QCheckBox{
    background: #fefefe;
    border-radius: 0px;
    border: 1px solid #D9DADC;
-   
+
    border: 1px solid #0F1417;
     background: #374148;
     color: #7E8F9D;
