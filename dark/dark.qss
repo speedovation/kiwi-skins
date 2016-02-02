@@ -18,10 +18,12 @@
 QMainWindow > .QWidget{
 /*    background: #eef1f8;*/
 /*    background: url(:/themes/white/white/bg.png) top left repeat;*/    padding: 0px;
+    color: #7E8F9D;
     border: none;
 /*    font-family: Consolas;*/}
 .QWidget , QDialog , #locatorCompleterParent, #modernMenu , QWidget#PreferencesInstance, QWidget#FindDialogInstance, QWidget#SaveFilesDialogInstance, QWidget#CreateProjectInstance, QWidget#FvUpdateWindow, QWidget#AutoUpdateWindowInstance , QTreeView#projectExplorer::branch:selected, QTreeView#preferencesSidebarTree::branch:selected, QTreeWidget#treeResult::branch:selected , QLabel{
-/*    background-image: url(:/themes/white/white/bg.png) top left repeat;*/    background-color: #202B33;
+/*    background-image: url(:/themes/white/white/bg.png) top left repeat;*/
+    background-color: #202B33;
     color: #7E8F9D;
 }
 /* Set the selection colors for all widgets. */
