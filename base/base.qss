@@ -49,7 +49,8 @@ QTreeWidget#treeResult::branch:selected
 }
 
 QTabWidget#fileBaseEditor::pane
-    {/*background: url(resources/skins/images/welcome.png) center center no-repeat;*/
+{
+    /*background: url(resources/skins/images/welcome.png) center center no-repeat;*/
 }
 
 QDialogButtonBox
@@ -772,15 +773,6 @@ QListView::item:selected
     color: #fff;
 }
 
-QListView::item:selected:!active
-{
-    background: qlineargradient(spread:reflect, x1:0.45241, y1:1, x2:0.441, y2:0.505, stop:0.255526 #FF9339, stop:0.960212 #F77F43);
-    border: 1px solid #F77F43;
-    color: #fff;
-    border: 1px solid #156CCE;
-    color: #fff;
-    background: #4797F1;
-}
 
 QListView::item:selected:active
 {
