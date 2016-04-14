@@ -43,9 +43,74 @@ QTreeWidget#treeResult::branch:selected
 
 }
 
-#locatorCompleterParent
+#navToolBar
 {
-    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#baseNavigation
+{
+    background-color: green;
+}
+
+#BaseNavigation
+{
+    background:red;
+    border:1px solid red;
+}
+
+#infoBase QPushButton
+{
+    border: 1px solid transparent;
+    padding:0px;
+    margin-right:5px;
+    background-color: transparent;
+/*    background-color: #ccaacc;*/
+    width: 32px;
+    height: 32px;
+}
+
+#infoBase QPushButton::hover
+{
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius:0px;
+}
+
+#infoBase QPushButton:checked
+{
+    background-color: #ccc;
+    border: 1px solid transparent;
+    border-radius:0px;
+}
+
+
+#LocaterBox QToolButton
+{
+    border: 1px solid transparent;
+    padding:6px;
+    margin-right:5px;
+/*    background-color: #ccaacc;*/
+/*    width: 32px;*/
+    height: 32px;
+}
+
+#LocaterBox QToolButton::hover
+{
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius:0px;
+}
+
+#LocaterBox QToolBar
+{
+
+    padding: 12px 0px 0px 0px;
+}
+
+#LocatorCompleterParent
+{
+    border: 1px solid #999;
 }
 
 QTabWidget#fileBaseEditor::pane
@@ -1772,6 +1837,65 @@ NavToolBar
 {
     border-left:0
 }
+
+
+/*Scroll bar for Breadcrumb*/
+#infoEditor QScrollBar:horizontal
+{
+    border: 1px solid #eee;
+    height: 15px;
+    margin: 0;
+}
+
+#infoEditor QScrollBar::handle:horizontal
+{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #f7f8f9, stop:0.0680112 #f7f8f9, stop:0.0690112 #f1f3f4, stop:0.514566 #e4e7ea, stop:0.52577 #dde1e5, stop:1 #d0d4da);
+    border-radius: 4px;
+    border: 1px solid #7d8389;
+    min-width: 2px;
+
+      background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #f7f8f9, stop:0.0680112 #f7f8f9, stop:0.0690112 #f1f3f4, stop:0.514566 #e4e7ea, stop:0.52577 #dde1e5, stop:1 #d0d4da);
+    border-radius: 1px;
+    border: 1px solid #aAaFb5;
+
+    background-color: #eaeaee;
+}
+
+#infoEditor QScrollBar::handle:horizontal:hover
+{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #fdfeff, stop:0.0680112 #fdfeff, stop:0.0690112 #f4f6f7, stop:0.514566 #e7e9ed, stop:0.52577 #dde2eb, stop:1 #dde2eb);
+    border-radius: 4px;
+    border: 1px solid #939aa2;
+
+
+      background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #f7f8f9, stop:0.0680112 #f7f8f9, stop:0.0690112 #f1f3f4, stop:0.514566 #e4e7ea, stop:0.52577 #dde1e5, stop:1 #d0d4da);
+    border-radius: 1px;
+    border: 1px solid #aAaFb5;
+
+    background-color: #fefefe;
+}
+
+
+
+
+#infoEditor QScrollBar::left-arrow:horizontal
+{
+/*    image: url(:/theme/images/theme/default/arrow/arrow-left.png);*/
+    border: none;
+    background: transparent;
+    width: 0px;
+    height: 1px;
+}
+
+#infoEditor QScrollBar::right-arrow:horizontal
+{
+/*    image: url(:/theme/images/theme/default/arrow/arrow-right.png);*/
+    border: none;
+    background: transparent;
+    width: 0px;
+    height: 1px;
+}
+
 
 /*
  QScrollBar:vertical { background: url(:client/img/common/vertical_scrollbar_bg.fw.png) repeat-y; width: 13px;  margin: 0px 0 0px 0;  }
