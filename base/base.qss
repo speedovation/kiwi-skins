@@ -51,30 +51,6 @@ QTreeWidget#treeResult::branch:selected
 */
 
 
-#infoBase QPushButton
-{
-    border: 1px solid transparent;
-    padding:0px;
-    margin-right:5px;
-    background-color: transparent;
-/*    background-color: #ccaacc;*/
-    width: 32px;
-    height: 32px;
-}
-
-#infoBase QPushButton::hover
-{
-    background-color: #fff;
-    border: 1px solid #aaa;
-    border-radius:0px;
-}
-
-#infoBase QPushButton:checked
-{
-    background-color: #ccc;
-    border: 1px solid transparent;
-    border-radius:0px;
-}
 
 
 #LocaterBox QToolButton
@@ -1741,7 +1717,9 @@ QToolButton
 /*    width: 15px;*/
 }
 
-#modernMenu QToolBar QToolButton
+
+
+#modernMenu QToolBar QToolButton 
 {
     max-height: 48px;
     min-height: 48px;
@@ -1777,6 +1755,13 @@ QToolButton
     border-radius: 0px;
     padding: 0px;
     background: yellow;
+}
+
+#modernMenu ActionButton
+{
+    padding: 20px 40px;
+    min-width: 48px;
+    min-height: 48px;
 }
 
 #modernMenu #horizontalLineWidget
@@ -1819,6 +1804,33 @@ QToolButton
     background-color:green;
 }
 */
+
+
+#infoBase QPushButton , #LocatorCompleterParent QPushButton
+{
+    border: 1px solid transparent;
+    padding:0px;
+    margin-right:5px;
+    background-color: transparent;
+/*    background-color: #ccaacc;*/
+    width: 28px;
+    height:28px;
+}
+
+#infoBase QPushButton::hover
+{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius:0px;
+}
+
+#infoBase QPushButton:checked
+{
+    background-color: #ddd;
+    border: 1px solid transparent;
+    border-radius:0px;
+    
+}
 
 NavToolBar
 {
