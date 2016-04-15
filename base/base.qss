@@ -25,7 +25,7 @@ QMainWindow > .QWidget
 /*    font-family: Consolas;*/
 }
 
-.QWidget , QDialog , #locatorCompleterParent, #modernMenu ,
+.QWidget , QDialog , #locatorCompleterParent, #enu ,
 QWidget#PreferencesInstance, QWidget#FindDialogInstance,
 QWidget#SaveFilesDialogInstance, QWidget#CreateProjectInstance,
 QWidget#FvUpdateWindow, QWidget#AutoUpdateWindowInstance ,
@@ -79,6 +79,8 @@ QTreeWidget#treeResult::branch:selected
 #LocatorCompleterParent
 {
     border: 1px solid #999;
+    border-top:4px solid #999;
+        border-bottom:4px solid #999;
 }
 
 
@@ -1695,6 +1697,8 @@ QToolButton
 #modernMenu
 {
         border: 1px solid #aAaFb5;
+        border-top:4px solid #999;
+        border-bottom:4px solid #999;
     padding: 4px 2px;
 /*    height: 40px;*/
 /*    margin-top: 2px;*/
@@ -1711,33 +1715,22 @@ QToolButton
 /*    padding-bottom: 8px;*/
     margin: 5px 0;
     spacing: 0px;
-    height: 48px;
-    max-height: 48px;
-    min-height: 48px;
+    height: 38px;
+    max-height: 32px;
+    min-height: 32px;
 /*    width: 15px;*/
 }
 
 
 
-#modernMenu QToolBar QToolButton 
+#modernMenu QToolButton 
 {
-    max-height: 48px;
-    min-height: 48px;
+    max-height: 24px;
+    min-height: 24px;
     color: #3A3F55;
     padding:5px;
-    height:48px;
+    height:24px;
 
-
-}
-/*QToolButton:hover:!pressed{border-width: 1px; border-image: url(:/images/RibbonToolButtonHoverBk.png) 4 4 4 4 stretch stretch;}*/
-/*QToolButton:hover:pressed{border-width: 1px; border-image: url(:/images/RibbonToolButtonPressedBk.png) 4 4 4 4 stretch stretch;}*/
-#modernMenu QToolBar QToolButton:on:hover
-{
-
-    color: #3A3F55;
-    background:red;
-    border:2px solid red;
-    margin:0;
 
 }
 
@@ -1745,23 +1738,17 @@ QToolButton
 {
     background: qlineargradient(spread:reflect, x1:0.45241, y1:1, x2:0.441, y2:0.505, stop:0.255526 #fff, stop:0.960212 #eee);
     border: 1px solid #999;
-    background:green;
+/*    background:green;*/
 }
 
-#modernMenu QToolBar QToolButton:on
-{
-    background: qlineargradient(spread:pad, x1:0, y1:0.028, x2:0, y2:0.693, stop:0 #a6aab2, stop:0.249451 #b7bbbf, stop:1 #b7bbbf);
-    border: 1px solid #97999d;
-    border-radius: 0px;
-    padding: 0px;
-    background: yellow;
-}
+
 
 #modernMenu ActionButton
 {
-    padding: 20px 40px;
-    min-width: 48px;
-    min-height: 48px;
+    padding: 10px 20px;
+    min-width: 50px;
+    min-height: 24px;
+    height:24px;
 }
 
 #modernMenu #horizontalLineWidget
