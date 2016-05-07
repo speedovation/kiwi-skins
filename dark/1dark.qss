@@ -14,11 +14,27 @@
 */
 
 
+/* Customize any plain widget that is a child of a QMainWindow.#ccd3b1 faf3e8*/
+QMainWindow > .QWidget{
+/*    background: #eef1f8;*/
+/*    background: url(:/themes/white/white/bg.png) top left repeat;*/    padding: 0px;
+    color: #7E8F9D;
+    border: none;
+/*    font-family: Consolas;*/}
+.QWidget , QDialog , #locatorCompleterParent, #modernMenu , QWidget#PreferencesInstance, QWidget#FindDialogInstance, QWidget#SaveFilesDialogInstance, QWidget#CreateProjectInstance, QWidget#FvUpdateWindow, QWidget#AutoUpdateWindowInstance , QTreeView#projectExplorer::branch:selected, QTreeView#preferencesSidebarTree::branch:selected, QTreeWidget#treeResult::branch:selected , QLabel{
+/*    background-image: url(:/themes/white/white/bg.png) top left repeat;*/
+    background-color: #202B33;
+    color: #7E8F9D;
+}
+/* Set the selection colors for all widgets. */
+QWidget{
+    selection-background-color: #6a7582;
+}
 QWidget#messageBar, QPlainTextEdit#messageBox{
     background-image: none;
-    background: #ccffcc;
-/*    border: 1px solid #F2AC01;*/
-/*    color: #7E8F9D;*/
+    background: #202B33;
+    border: 1px solid #F2AC01;
+    color: #7E8F9D;
     margin-top: 0px;
 }
 QToolTip , #TooltipInfo QLabel,#TooltipInfo
@@ -31,115 +47,75 @@ QToolTip , #TooltipInfo QLabel,#TooltipInfo
 
 }
 
-
-/*Change bg color of selector list and css top toolbar */
-#cssToolBar , #cssSelectorsList
-{
-/*    background-color:#fff;*/
+QTabWidget#tabToolWindow QTabBar::tab:top:selected{
+    border: 0px solid #8b939c;
+    border-bottom: 0px solid #ccc;
+    background: #eef1f8;
+}
+QTabWidget#tabToolWindow QTabBar::tab:top:!selected{
+    border: 0px solid #8b939c;
 }
 
 
-QTabWidget::tab-bar:top
-{
-    left: 0px;
-}
-
-QTabWidget
-{
-    border: none;
-    outline: 0;
-}
-
-QTabWidget::pane
-{
-    border: none;
-
-    border: 0px solid #282C34;
-    border-top: 1px solid #282C34;
+QTabWidget::pane{
+    border: 1px solid #000;
     top: -1px;
 }
-
-QTabBar
-{
-
-}
-
-QTabBar::tab:top
-{
-    min-width: 16ex;
-    padding: 5px 8px;
-    margin-right: 0px;
-    margin-left: 0px;
+QTabBar::tab:top:!selected{
+/*    border-width: 1;*/
+    color: #98AFC2;
+    margin-top: 0px;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
+    border: 0px solid #374148;
+    border-bottom-color: transparent;
+    background: #374148;
+    background: #374148;
+    border-right: 0;
 }
-
-
-QTabBar::tab:top:!selected
-{
-    color: #95a5b4;
-    border: 1px solid #282C34;
-    border-top-color: #282C34;
-    background: #191C1E;
-
-/* margin-top: 0px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;*/
-/*    border: 1px solid #444;*/
-/*    border-bottom-color: #282C34;*/
-/*    border-top-color: transparent;*/
-/*    border-left : 0;*/
-}
-
 /* make use of negative margins for overlapping tabs */
-QTabBar::tab:top:selected
-{
-/*    border-width: 0;*/
-    color: #9DAAB2;
-    border: 1px solid #282C34;
-    border-top-color: #2A82DA;
-    background: #22282A;
-
-/* border-bottom: 1px solid #c3bfbf;*/
-/*    border-top-width:1px;*/
-/*    border-bottom-color: transparent;*/
-    
+QTabBar::tab:top:selected{
+    border-width: 0;
+     border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border: 0px solid #7d8389;
+    border-bottom: 0px solid #c3bfbf;
+    background: #1F252A;
+    color: #fff;
+    border-top-width:0px;
+/*    border-right : 0;*/
 }
-QTabBar::tab:top:last
-{
-/*    border-right: 1px solid #E5E5E6;*/
-}
-QTabBar::tab:top:hover
-{
-    background: #22282A;
-
+QTabBar::tab:top:last{
+    border-right: 1px solid #7d8389;
 }
 
-QTabBar::tab:top:selected:hover
-{
-    background:#22282A;
+QTabBar::tab:top:hover{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E6E5E3, stop:1 #E6E5E3);
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #E6E5E3, stop:1 #E6E5E3);
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #c3c3cC, stop:1 #aAaFb5);
+    background: #222B31;
 }
 
-
-
+QTabBar::tab:top:selected:hover{
+    background: #1F252A;
+    color: #fff;
+}
 
 QTabBar::tab:bottom:!selected{
     border-width: 1;
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #edeff1, stop:1 #e3e6e9);
     border: 0px solid #8b939c;
-    margin-bottom: 1px;
-}
-
+/* same as pane color */    margin-bottom: 1px;
+/* make non-selected tabs look smaller */}
+/* make use of negative margins for overlapping tabs */
 QTabBar::tab:bottom:selected{
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #efefef, stop:1 #dee0e2);
+/*    border-width: 2;*/    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #efefef, stop:1 #dee0e2);
     border: 0px solid #c3bfbf;
     border-top-color: #efefef;
-}
-
+/* same as pane color */}
 QTabBar::tab:bottom:hover{
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #fbfdfe, stop:1 #edeff1);
 }
-
 QTabBar::tab:bottom:selected:hover{
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #efefef, stop:1 #dee0e2);
 }
@@ -212,7 +188,50 @@ QLineEdit, QTextEdit, #findTextBox, #replaceTextBox{
     background: #374148;
     color: #7E8F9D;
 }
-
+QLineEdit:disabled , QTextEdit:disabled{
+    background-color: #262C2F;
+    color: #505C61;
+}
+QPushButton[flat=false]{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #f7f8f9, stop:0.0680112 #f7f8f9, stop:0.0690112 #f1f3f4, stop:0.514566 #e4e7ea, stop:0.52577 #dde1e5, stop:1 #d0d4da);
+    border-radius: 0px;
+    border: 1px solid #7E8F9D;
+    border: 1px solid #0F1417;
+    background: #374148;
+    color: #7E8F9D;
+/*    background: #0080FF;*/
+/*    border: 0px solid #FA553F;*/    color: #fff;
+}
+QPushButton#btnDownloadLatestVersion{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #F8FD7D, stop:0.514566 #D1F224, stop:1 #DDE981);
+}
+QPushButton#btnDownloadLatestVersion:hover{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #F8FD7D, stop:0.514566 #D1F224, stop:1 #CCDB5E);
+}
+QPushButton[flat=false]:hover{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #fdfeff, stop:0.0680112 #fdfeff, stop:0.0690112 #f4f6f7, stop:0.514566 #e7e9ed, stop:0.52577 #dde2eb, stop:1 #dde2eb);
+    border-radius: 0px;
+    border: 1px solid #939aa2;
+    border: 1px solid #0F1417;
+    background: #7E8F9D;
+    color: #202B33;
+/*    background: #007DFF;*/
+/*    color: #fff;*/}
+QPushButton[flat=false]:pressed{
+    border-radius: 1px;
+    border: 1px solid #7d8389;
+    background: #0F1417;
+}
+QPushButton:checked{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #0F1417, stop:1 #0F1417);
+    border: 1px solid #202B33;
+}
+QPushButton[flat=false]:disabled{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #e3e6e9, stop:0.0680112 #e3e6e9, stop:0.0690112 #d1d6db, stop:0.514566 #ccd0d6, stop:0.52577 #c6cbd2, stop:1 #c0c6cd);
+    border-radius: 1px;
+    border: 1px solid #969ea7;
+    color: #979ea8;
+}
 /* Customize the treeview. */
 QTreeView,QTreeWidget{
     color: #7E8F9D;

@@ -174,36 +174,11 @@ QListWidget#recentList,QListWidget#recentSessionList
     background: transparent;
 }
 
-/* CSS Window Tab STARTS */
-QTabWidget#tabToolWindow::tab-bar:top
-{
-    left: 0px;
-}
 
-QTabWidget#tabToolWindow QTabBar::tab:top
-{
-    min-width: 14ex;
-    padding: 3px;
-    height: 18px;
-    margin-right: 1px;
-    margin-left: 1px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-}
 
-QTabWidget#tabToolWindow QTabBar::tab:top:selected
-{
-    border: 1px solid #8b939c;
-    border-bottom: 0px solid #ccc;
-    background: #eef1f8;
-}
 
-QTabWidget#tabToolWindow QTabBar::tab:top:!selected
-{
-    border: 1px solid #8b939c;
-}
 
-/* CSS Window Tab ENDS */
+
 
 QTabWidget::tab-bar:top
 {
