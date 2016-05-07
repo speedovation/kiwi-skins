@@ -53,35 +53,7 @@ QTreeWidget#treeResult::branch:selected
 
 
 
-#LocaterBox QToolButton
-{
-    border: 1px solid transparent;
-    padding:6px;
-    margin-right:5px;
-/*    background-color: #ccaacc;*/
-/*    width: 32px;*/
-    height: 32px;
-}
 
-#LocaterBox QToolButton::hover
-{
-    background-color: #fff;
-    border: 1px solid #aaa;
-    border-radius:0px;
-}
-
-#LocaterBox QToolBar
-{
-
-    padding: 12px 0px 0px 0px;
-}
-
-#LocatorCompleterParent
-{
-    border: 1px solid #999;
-    border-top:4px solid #999;
-        border-bottom:4px solid #999;
-}
 
 
 QTabWidget#fileBaseEditor::pane
@@ -1669,33 +1641,51 @@ QToolButton
     padding: 0px 0px;
 }
 
+
+#LocaterBox QToolButton
+{
+    border: 1px solid transparent;
+    padding:6px;
+    margin-right:5px;
+    height: 32px;
+}
+
+#LocaterBox QToolButton::hover
+{
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius:0px;
+}
+
+#LocaterBox QToolBar
+{
+    padding: 12px 0px 0px 0px;
+}
+
+#LocatorCompleterParent
+{
+    border: 1px solid #999;
+    border-top:4px solid #999;
+    border-bottom:4px solid #999;
+}
+
 #modernMenu
 {
         border: 1px solid #aAaFb5;
         border-top:4px solid #999;
         border-bottom:4px solid #999;
     padding: 4px 2px;
-/*    height: 40px;*/
-/*    margin-top: 2px;*/
 
-/*    background-color: #eaeaee;
-    color: #aAaFb5;*/
 }
 
 #modernMenu QToolBar
 {
-/*    max-height: 20px;    */
-/*    min-height: 20px;    */
-/*    padding-top: 8px;*/
-/*    padding-bottom: 8px;*/
     margin: 5px 0;
     spacing: 0px;
     height: 38px;
     max-height: 32px;
     min-height: 32px;
-/*    width: 15px;*/
 }
-
 
 
 #modernMenu QToolButton 
@@ -1705,17 +1695,13 @@ QToolButton
     color: #3A3F55;
     padding:5px;
     height:24px;
-
-
 }
 
 #modernMenu QToolBar QToolButton:on:active
 {
     background: qlineargradient(spread:reflect, x1:0.45241, y1:1, x2:0.441, y2:0.505, stop:0.255526 #fff, stop:0.960212 #eee);
     border: 1px solid #999;
-/*    background:green;*/
 }
-
 
 
 #modernMenu ActionButton
@@ -1760,12 +1746,6 @@ QToolButton
 {
     border-left:0
 }
-/*
-#scrollAreaWidgetContents
-{
-    background-color:green;
-}
-*/
 
 
 #infoBase QPushButton , #LocatorCompleterParent QPushButton
@@ -1774,7 +1754,6 @@ QToolButton
     padding:0px;
     margin-right:5px;
     background-color: transparent;
-/*    background-color: #ccaacc;*/
     width: 28px;
     height:28px;
 }
