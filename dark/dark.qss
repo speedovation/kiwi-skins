@@ -72,22 +72,28 @@ QTabBar::tab:top
     margin-left: 0px;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
+	border-top-width:2px;
+	
 }
 
 
 QTabBar::tab:top:!selected
 {
-    color: #95a5b4;
+    color: #778882;
     border: 1px solid #282C34;
     border-top-color: #282C34;
+	border-bottom-color:transparent;
     background: #191C1E;
+	border-top-width:2px;
 }
 
 QTabBar::tab:top:selected
 {
-    color: #9DAAB2;
+    color: #92B5A9;
     border: 1px solid #282C34;
     border-top-color: #2A82DA;
+	border-top-width:2px;
+	border-bottom-color:transparent;
     background: #22282A;
 }
 QTabBar::tab:top:last
@@ -140,23 +146,13 @@ QToolBox::tab:selected,QToolBox::tab:hover{
     border-radius: 0px;
 }
 QLineEdit, QTextEdit, #findTextBox, #replaceTextBox{
-    border-radius: 3px;
-    border-bottom: 1px solid #505d6e;
-/*selection-background-color: darkgray;*/    padding: 2px;
-    background: qlineargradient(spread:reflect, x1:0.45241, y1:1, x2:0.441, y2:0.505, stop:0.255526 #fff, stop:0.960212 #fff);
-    border: 1px solid #818489;
-    color: #7E8F9D;
+    border-bottom-width: 1px;
     border-radius: 1px;
     padding: 2px 0;
-    border: 1px solid #7E8F9D;
-    border: 1px solid #0F1417;
-    background: #374148;
-    color: #7E8F9D;
 }
 
 /* Customize the treeview. */
 QTreeView,QTreeWidget{
-    color: #7E8F9D;
     background: transparent;
     border: 0px solid #fff;
     margin-bottom: 0px;
