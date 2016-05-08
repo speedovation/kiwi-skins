@@ -413,7 +413,7 @@ QSplitter::handle:vertical
 QSplitter::handle
 {
     /*image: url(resources/skins/images/view-fullscreen.png);*/
-    background: #E6E5E3;
+    background: #1D1F21;
 }
 
 QSplitter::handle:pressed
