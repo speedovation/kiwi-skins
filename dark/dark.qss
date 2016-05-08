@@ -429,10 +429,6 @@ QMenuBar::item
 	margin:0;
 }
 QMenuBar::item:selected{
- 	background: #4797F1;
-    border: 1px solid transparent;
-    color: #fff;
-	
 	color: #ddd;
 	border: 1px solid #4C5753;
     background: #424C49;
@@ -443,14 +439,13 @@ QMenuBar::item:pressed{
     border-bottom-color: transparent;
 }
 QToolBar#mainToolBar{
-/*    background: #eef1f8;*/
-/*    background-image: url(:/themes/white/white/bg.png) top left repeat;*/    background: transparent;
+	background: transparent;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border: 0px solid #7d8389;
     border: none;
     spacing: 0px;
-/* spacing between items in the tool bar */    padding: 0px;
+	padding: 0px;
     margin: 0px;
     margin-top: 0px;
 }
@@ -484,14 +479,11 @@ QToolBar QToolButton:on{
     padding: 0px;
 }
 QMenu{
-    color: #414243;
-    background-color: #CACEDB;
-/*    background-image: url(:/themes/white/white/bg.png) top left repeat;*/    margin: 0px;
-    padding: 2px;
-/* some spacing around the menu */    border: none;
-    border: 1px solid #7E8F9D;
-    background: #374148;
-    color: #7E8F9D;
+/*	margin: 0px;*/
+/*    padding: 2px;*/
+    border: 1px solid #92A09B;
+    background: #191C1E;
+    color: #92A09B;
 }
 QMenu::item:selected{
     background: #4797F1;
@@ -500,7 +492,7 @@ QMenu::item:selected{
 }
 QMenu::separator{
     height: 1px;
-    border-bottom: 1px solid #D6D7EE;
+    border-bottom: 1px solid #92A09B;
     border-top: 0px solid #D6D7EE;
     margin-left: 5px;
     margin-right: 5px;
