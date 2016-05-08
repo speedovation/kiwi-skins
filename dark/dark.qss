@@ -82,19 +82,19 @@ QTabBar::tab:top:!selected
     color: #92A09B;
     border: 1px solid #282C34;
     border-top-color: #282C34;
-	border-bottom-color:transparent;
+	border-bottom-color:#282C34;
     background: #191C1E;
-	border-top-width:2px;
+	border-top-width:3px;
 }
 
 QTabBar::tab:top:selected
 {
     color: #92B5A9;
     border: 1px solid #282C34;
-    border-top-color: #2A82DA;
+    border-top-color: #FFCD22;
 	border-top-width:2px;
 	border-bottom-color:transparent;
-    background: #22282A;
+    background: #1D1F21;
 }
 QTabBar::tab:top:last
 {
@@ -108,7 +108,7 @@ QTabBar::tab:top:hover
 
 QTabBar::tab:top:selected:hover
 {
-    background:#22282A;
+    background:#1D1F21;
 }
 
 
@@ -547,14 +547,14 @@ QScrollBar:vertical
 
 QScrollBar::handle:vertical
 {
-    border: 1px solid #5F6D68;
-    background-color: #72837D;
+    border: 1px solid #262C2A;
+    background-color: #39413E;
 }
 
 QScrollBar::handle:vertical:hover
 {
-    border: 1px solid #687873;
-    background-color: #9DAAA5;
+    border: 1px solid #4C5753;
+    background-color: #55625E;
 }
 
 QScrollBar::add-line:vertical
@@ -605,14 +605,14 @@ QScrollBar:horizontal
 QScrollBar::handle:horizontal
 {
     min-width: 20px;
-    border: 1px solid #5F6D68;
-    background-color: #72837D;
+    border: 1px solid #262C2A;
+    background-color: #39413E;
 }
 
 QScrollBar::handle:horizontal:hover
 {
-    border: 1px solid #687873;
-    background-color: #9DAAA5;
+    border: 1px solid #4C5753;
+    background-color: #55625E;
 }
 
 QScrollBar::add-line:horizontal
@@ -680,25 +680,18 @@ QSplitter::handle:pressed
 
 
 
-/* Style for main toolbar */
 QToolBar
 {
     border: 0px solid #8b8b8b;
 	background-color: transparent;
-	spacing: 2px; /* spacing between items in the tool bar */
-/*	margin-left: 0px;*/
-/*	color: #e5e5e5;*/
+	spacing: 2px;
 	max-height: 20px;
 }
 
 
-/* All types of tool button */
 QToolButton
 {
 	border: 0px solid #353535;
-/*	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a6a6a6, stop:1 #8a8a8a);*/
-/*	color: #e5e5e5;*/
-/*	border-radius: 5px;*/
 	max-height: 16px;
 /*	min-width: 18px;*/
 }
