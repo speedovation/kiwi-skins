@@ -446,7 +446,11 @@ QToolBar QToolButton:on {
 
 #filesToolbase,
 #projectsToolbase,
-#sessionsToolbase {
+#sessionsToolbase,
+#sessionsList,
+#projectsList,
+#filesList 
+ {
     background: transparent;
 }
 
